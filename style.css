@@ -19,8 +19,9 @@
 }
 
 body{
-    height: 100vh;
-    background-color: var(--body-color);
+    min-height: 100vh;
+    background-color: #202020;
+    overflow: hidden;
 }
 
 body.dark{
@@ -37,7 +38,7 @@ nav{
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: transparent;
     z-index: 100;
 }
 
@@ -46,7 +47,7 @@ nav .nav-bar{
     height: 100%;
     max-width: 1000px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: transparent;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -55,7 +56,7 @@ nav .nav-bar{
 
 }
 nav .nav-bar .sidebarOpen{
-    color: var(--text-color);
+    color: #e6111b;
     font-size: 25px;
     padding: 5px;
     cursor: pointer;
@@ -85,7 +86,7 @@ nav .nav-bar img {
     position: relative;
     font-size: 17px;
     font-weight: 500;
-    color: var(--text-color);
+    color: red;
     text-decoration: none;
     padding: 10px;
 }
@@ -231,6 +232,46 @@ body.dark .search-field input{
 
 body.dark .search-field i{
     color: var(--text-color);
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button{
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font: 1.2em;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+    
+}
+
+.block{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+
+}
+
+.block:nth-child(3n + 2){
+    background: #444;
+}
+.block:nth-child(3n + 3){
+    background: #ff9213;
 }
 
 @media (max-width: 790px) {
