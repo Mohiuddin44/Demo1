@@ -247,6 +247,7 @@ body.dark .search-field i{
         padding: 20px;
         background-color: #663399;
         transition: all 0.3s ease;
+        z-index: 100;
 
     }
     nav.active .menu{
